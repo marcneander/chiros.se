@@ -1,0 +1,97 @@
+/**
+ * chiros.se stylesheet
+ *
+ * This stylesheet follows the principles of writing
+ * consistent, idiomatic CSS by Nicolas Gallagher.
+ *
+ * https://github.com/necolas/idiomatic-css/
+ *
+ */
+
+
+/* Include normalize.css by Nicolas Gallagher */
+@import (inline) "normalize-css/normalize.css";
+
+/* ==========================================================================
+   Basic styling for text and scaffolding
+   ========================================================================== */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    background: #F9F9F9;
+}
+
+a {
+    color: #20A2FF;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h1,
+h2 {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+h2 { margin-bottom: 16px; }
+
+h1 {
+    font-size: 70px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    color: #FFD400;
+}
+
+h3,
+h4,
+h5 {
+    margin: 0 0 12px;
+    font-size: 20px;
+
+    @media (min-width: 768px) {
+        margin: 0 0 20px;
+        font-size: 24px;
+    }
+}
+
+p {
+    margin: 0 0 26px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+/* Utilities */
+.fs24 { font-size: 24px; }
+.mb-38 { margin-bottom: 38px; }
+.mb-10 { margin-bottom: 10px; }
