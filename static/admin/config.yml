@@ -22,13 +22,15 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: string}
-          - {label: Employees, name: employees, widget: list, }
-          - label: "Facebook widget"
-            name: "facebookWidget"
-            widget: "text"
-            field:
+          - label: "Employees"
+            name: "employees"
+            widget: "list"
+            fields:
               - {label: Image, name: image, widget: image}
               - {label: Name, name: name, widget: string}
               - {label: Title, name: title, widget: string}
               - {label: Phonenumber, name: phone, widget: string}
               - {label: Email, name: email, widget: string}
+          - label: "Facebook widget"
+            name: "facebookWidget"
+            widget: "text"
