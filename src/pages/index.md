@@ -1,7 +1,9 @@
 ---
 templateKey: index-page
-title: Välkommen till oss! Vad roligt att just du hittat hit
-description: >-
+text: >-
+  # Välkommen till oss! Vad roligt att just du hittat hit
+
+
   Chiros är en liten redovisnigsbyrå belägen mitt i Älvsjö centrum och drivs
   tillsammans av oss - Nina & Niki. Vi värdesätter kunskap och kvalité och
   brinner för att våra kunder ska känna sig nöjda och trygga.
