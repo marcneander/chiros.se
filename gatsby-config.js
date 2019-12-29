@@ -59,7 +59,7 @@ module.exports = {
                 ]
             }
         },
-        'gatsby-plugin-netlify',
+        'gatsby-plugin-netlify-cms',
         {
             resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
             options: {
