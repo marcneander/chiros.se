@@ -59,7 +59,12 @@ module.exports = {
                 ]
             }
         },
-        'gatsby-plugin-netlify-cms',
+        {
+            resolve: `gatsby-plugin-netlify-cms`,
+            options: {
+                enableIdentityWidget: true
+            }
+        },
         {
             resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
             options: {
