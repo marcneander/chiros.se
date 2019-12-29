@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { withPrefix } from 'gatsby';
-import Footer from './Footer';
+// import Footer from './Footer';
 import './all.sass';
 import useSiteMetadata from './SiteMetadata';
 
@@ -30,7 +30,7 @@ const TemplateWrapper = ({ children }) => {
                 <meta property="og:image" content={`${withPrefix('/')}/img/logo-full.jpg`} />
             </Helmet>
             <div>{children}</div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };

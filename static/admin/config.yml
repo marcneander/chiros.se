@@ -20,8 +20,7 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: text}
+          - {label: Text, name: text, widget: markdown}
           - label: "Employees"
             name: "employees"
             widget: "list"
