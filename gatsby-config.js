@@ -1,8 +1,8 @@
 module.exports = {
     siteMetadata: {
-        title: 'Gatsby + Netlify CMS Starter',
+        title: 'Chiros redovisning',
         description:
-            'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.'
+            'Chiros är en liten redovisnigsbyrå belägen mitt i Älvsjö centrum och drivs tillsammans av oss, Nina & Niki'
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -60,7 +60,7 @@ module.exports = {
             }
         },
         {
-            resolve: `gatsby-plugin-netlify-cms`,
+            resolve: 'gatsby-plugin-netlify-cms',
             options: {
                 enableIdentityWidget: true
             }
