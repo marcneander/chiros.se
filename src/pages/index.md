@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Välkommen till oss! Vad roligt att just du hittat hit
 description: >-
   Chiros är en liten redovisnigsbyrå belägen mitt i Älvsjö centrum och drivs
   tillsammans av oss - Nina & Niki. Vi värdesätter kunskap och kvalité och
