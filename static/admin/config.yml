@@ -25,8 +25,8 @@ collections:
             name: "employees"
             widget: "list"
             fields:
-              - {label: Image, name: image, widget: image}
               - {label: Name, name: name, widget: string}
+              - {label: Image, name: image, widget: image}
               - {label: Title, name: title, widget: string}
               - {label: Phonenumber, name: phone, widget: string}
               - {label: Email, name: email, widget: string}
