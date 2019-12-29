@@ -4,26 +4,12 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 
-export const IndexPageTemplate = () => (
-    <div>
-        <h1>Chiros redovisning</h1>
-    </div>
-);
-
 const IndexPage = ({ data }) => {
-    const { frontmatter } = data.markdownRemark;
+    const { html } = data.markdownRemark;
 
     return (
         <Layout>
-            <IndexPageTemplate
-                image={frontmatter.image}
-                title={frontmatter.title}
-                heading={frontmatter.heading}
-                subheading={frontmatter.subheading}
-                mainpitch={frontmatter.mainpitch}
-                description={frontmatter.description}
-                intro={frontmatter.intro}
-            />
+            <div dangerouslySetInnerHTML={{ __html: html }} />
         </Layout>
     );
 };
@@ -31,7 +17,8 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
     data: PropTypes.shape({
         markdownRemark: PropTypes.shape({
-            frontmatter: PropTypes.object
+            frontmatter: PropTypes.object,
+            html: PropTypes.string
         })
     }).isRequired
 };
@@ -41,9 +28,7 @@ export default IndexPage;
 export const pageQuery = graphql`
     query IndexPageTemplate {
         markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-            frontmatter {
-                facebookWidget
-            }
+            html
         }
     }
 `;
