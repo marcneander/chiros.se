@@ -8,6 +8,7 @@ import useSiteMetadata from './SiteMetadata';
 
 const TemplateWrapper = ({ children }) => {
     const { title, description } = useSiteMetadata();
+
     return (
         <div>
             <Helmet>
@@ -26,8 +27,8 @@ const TemplateWrapper = ({ children }) => {
 
                 <meta property="og:type" content="business.business" />
                 <meta property="og:title" content={title} />
-                <meta property="og:url" content={withPrefix('/')} />
-                <meta property="og:image" content={`${withPrefix('/')}/img/logo-full.jpg`} />
+                <meta property="og:url" content="https://chiros.se" />
+                <meta property="og:image" content="https://chiros.se/img/logo-full.jpg" />
             </Helmet>
             <div>{children}</div>
             {/* <Footer /> */}
