@@ -2,12 +2,12 @@
 templateKey: index-page
 employees:
   - email: nina@chiros.se
-    image: /img/2018-09-05-15.17.54.jpg
+    image: /img/nina.png
     name: Nina Edsbrand
     phone: 070 440 21 84
     title: 'Auktoriserad redovisningskonsult, SRF'
   - email: niki@chiros.se
-    image: /img/2018-09-05-15.22.12.jpg
+    image: /img/niki.png
     name: Niki Neander
     phone: 070 483 37 95
     title: Redovisningskonsult
