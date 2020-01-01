@@ -1,12 +1,11 @@
 import React from 'react';
+import Image from 'gatsby-image';
 import { useStaticQuery, graphql } from 'gatsby';
 
 const Logotype = () => {
     const {
         file: {
-            childImageSharp: {
-                fixed: { src }
-            }
+            childImageSharp: { fixed }
         }
     } = useStaticQuery(graphql`
         query {
@@ -20,7 +19,7 @@ const Logotype = () => {
         }
     `);
 
-    return <img className="logotype" src={src} alt="Chiros logotyp" />;
+    return <Image fixed={fixed} critical fadeIn={false} alt="Chiros logotyp" />;
 };
 
 export default Logotype;

@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
         <Layout>
             <div dangerouslySetInnerHTML={{ __html: html }} />
             {employees.map(employee => (
-                <Employee data={employee} />
+                <Employee key={employee.email} data={employee} />
             ))}
         </Layout>
     );

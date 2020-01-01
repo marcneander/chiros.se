@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Image from 'gatsby-image';
 
-
 const Employee = ({ data }) => (
     <div>
         <div>
