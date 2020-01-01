@@ -8,7 +8,7 @@ import Employee from '../components/Employee';
 const IndexPage = ({ data }) => {
     const {
         html,
-        frontmatter: { employees }
+        frontmatter: { employees, facebookWidget }
     } = data.markdownRemark;
 
     return (
@@ -17,6 +17,7 @@ const IndexPage = ({ data }) => {
             {employees.map(employee => (
                 <Employee key={employee.email} data={employee} />
             ))}
+            <div dangerouslySetInnerHTML={{ __html: facebookWidget }} />
         </Layout>
     );
 };
