@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
             {employees.map(employee => (
                 <Employee key={employee.email} data={employee} />
             ))}
-            <div dangerouslySetInnerHTML={{ __html: facebookWidget }} />
+            <div className="facebook-widget" dangerouslySetInnerHTML={{ __html: facebookWidget }} />
         </Layout>
     );
 };
