@@ -12,7 +12,7 @@ const Logotype = () => {
             file(relativePath: { eq: "logo-full.png" }) {
                 childImageSharp {
                     fixed(height: 120, quality: 100) {
-                        ...GatsbyImageSharpFixed_noBase64
+                        ...GatsbyImageSharpFixed_withWebp_noBase64
                     }
                 }
             }
