@@ -12,14 +12,14 @@ const Logotype = () => {
             file(relativePath: { eq: "logo-full.png" }) {
                 childImageSharp {
                     fixed(height: 120, quality: 100) {
-                        ...GatsbyImageSharpFixed
+                        ...GatsbyImageSharpFixed_noBase64
                     }
                 }
             }
         }
     `);
 
-    return <Image fixed={fixed} critical fadeIn={false} alt="Chiros logotyp" />;
+    return <Image fixed={fixed} loading="eager" fadeIn={false} alt="Chiros logotyp" />;
 };
 
 export default Logotype;
