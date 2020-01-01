@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: v2
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/index.md"
+        label: "Landing Page"
+        name: "index"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
+          - {label: Body, name: body, widget: markdown}
+          - label: "Employees"
+            name: "employees"
+            widget: "list"
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Image, name: image, widget: image}
+              - {label: Title, name: title, widget: string}
+              - {label: Phonenumber, name: phone, widget: string}
+              - {label: Email, name: email, widget: string}
+          - label: "Facebook widget"
+            name: "facebookWidget"
+            widget: "text"  

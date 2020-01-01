@@ -1,6 +1,3 @@
-# chiros.se
-Small presentation website of chiros.se
+# Chiros
 
-## Get up and running
-1. npm install & bower install
-2. gulp
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3ebcd353-f64d-49c0-88c7-aa389349051a/deploy-status)](https://app.netlify.com/sites/chiros/deploys)
