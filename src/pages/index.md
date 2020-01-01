@@ -12,19 +12,12 @@ employees:
     phone: 070 483 37 95
     title: Redovisningskonsult
 facebookWidget: >-
-  <div id="fb-root"></div>
-
+  <div class="fb-page" data-href="https://www.facebook.com/chirosredovisning"
+  data-tabs="timeline" data-small-header="true"
+  data-adapt-container-width="true" data-hide-cover="false"
+  data-show-facepile="true"></div><div id="fb-root"></div>
   <script async defer crossorigin="anonymous"
   src="https://connect.facebook.net/sv_SE/sdk.js#xfbml=1&version=v5.0&appId=623511758418025&autoLogAppEvents=1"></script>
-
-  <div class="fb-page" data-href="https://www.facebook.com/chirosredovisning"
-  data-tabs="timeline" data-width="" data-height="" data-small-header="true"
-  data-adapt-container-width="true" data-hide-cover="false"
-  data-show-facepile="true"><blockquote
-  cite="https://www.facebook.com/chirosredovisning"
-  class="fb-xfbml-parse-ignore"><a
-  href="https://www.facebook.com/chirosredovisning">Chiros Redovisning
-  AB</a></blockquote></div>
 ---
 # Välkommen till oss! Vad roligt att just du hittat hit
 
